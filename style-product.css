@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&family=Pacifico&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* home */
+#home{
+    height: 600px;
+    background-color: #eddabb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teks{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(251, 251, 251, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.teks:hover{
+    opacity: 1;
+}
+.teks h1{
+    font-size: 40px;
+}
+
+.teks > *{
+    transform:translateY(25px);
+    transition: transform 0.6s;
+}
+
+.teks:hover > *{
+    transform:translateY(0px);
+}
+
+.oval{
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+}
+.oval img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (min-width: 1500px){
+    .oval{
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 400px;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .oval{
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 250px;
+        height: 300px;
+    }
+}
+
+
+.oval::before,
+.oval::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+.oval::before{
+    top: -15px;
+    left: -15px;
+    background-image: url('image/sparkle-sparkle-removebg-preview.png');
+    background-size: cover;
+}
+.oval::after{
+    right: -15px;
+    bottom: -15px;
+    background-image: url('image/sparkle-sparkle-removebg-preview.png');
+    background-size: cover;
+}
+
+
+.ovall2{
+    display: flex;
+    margin-bottom: 400px;
+}
+
+.navbar-brand{
+    font-family: 'Kalnia', sans-serif;
+    font-size: 500;
+}
+
+nav {
+    font-family: 'Kalnia', sans-serif;
+    font-size: 300;
+}
+
+.garis h1{
+    text-align: center;
+    line-height: 10; 
+    margin-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.garis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #bba8a8;
+}
+
+.teks1 {
+    text-align: center;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.shop .content {
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    margin: 30px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 60px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    transition: .6s;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+.content:hover{
+    box-shadow: 0 3px 6px rgba(255, 0, 0, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+img{
+    width: 200px;
+    height: 200px ;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.harga, h6{
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    color: rgb(255, 0, 162);
+}
+  
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    margin-left: 35%;
+    margin-right: 50%;
+}
+
+li{
+    padding-top: 5px;
+}
+
+.fa{
+    font-size: 30px;
+    transition: .4s;
+    margin: 3px;
+}
+
+.checked{
+    color: rgb(255, 234, 0);
+}
+
+.fa:hover{
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+button{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 50px;
+    height: 330px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s;
+    border: none;
+}
+/* untuk tombol beli */
+.buy{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
+
+.harga,
+.content p {
+    margin: 0;
+}
+
+button a {
+    color: rgb(247, 247, 247);
+}
+
+button:hover{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 62, 187, 0.872);
+}
+

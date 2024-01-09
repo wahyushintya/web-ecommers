@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    font-family: 'Cinzel', serif;
+}
+
+.navbar-brand {
+    font-family: 'Kalnia', sans-serif;
+    font-size: 500;
+}
+
+nav {
+    font-family: 'Kalnia', sans-serif;
+    font-size: 300;
+}
+
+/* HOME */
+#home {
+    height: 650px;
+    background-color: #eddabb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#home h1{
+    font-family: 'Cinzel', serif;
+}
+
+.oval {
+    position: relative;
+    display: flex;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+}
+
+.oval img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* RESPONSIVE HOME */
+@media (min-width: 1500px) {
+    .oval {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 750px) {
+    .oval {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .oval {
+        position: relative;
+        display: flex;
+        text-align: center;
+        width: 150px;
+        height: 200px;
+    }
+
+    .oval::before,
+    .oval::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+    }
+
+    .oval::before {
+        top: -5px;
+        left: -5px;
+        background-image: url('image/sparkle-sparkle-removebg-preview.png');
+        background-size: cover;
+    }
+
+    .oval::after {
+        right: -5px;
+        bottom: -5px;
+        background-image: url('image/sparkle-sparkle-removebg-preview.png');
+        background-size: cover;
+    }
+}
+
+/* HOME PSEUDO */
+.oval::before,
+.oval::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+.oval::before {
+    top: -15px;
+    left: -15px;
+    background-image: url('image/sparkle-sparkle-removebg-preview.png');
+    background-size: cover;
+}
+
+.oval::after {
+    right: -15px;
+    bottom: -15px;
+    background-image: url('image/sparkle-sparkle-removebg-preview.png');
+    background-size: cover;
+}
+
+/*
+.ovall2{
+    display: flex;
+    margin-bottom: 400px;
+} */
+
+/* css tempat foto geser */
+/* .carousel{
+    font-family: 'Abril Fatface', serif;
+} */
+
+/* ABOUT */
+#about {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row .col .foto {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 3px solid #856f4b;
+    border-radius: 5%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.row .col .foto::before,
+.row .col .foto::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+    position: absolute;
+}
+
+.row .col .foto::before {
+    top: 15px;
+    left: 15px;
+    background-image: url(image/img1-1.jpeg);
+    background-size: cover;
+}
+
+/* BEST SELLER PRODUCT */
+
+/* CUSTOMER REVIEW */
+.cmn {
+    background: #eddabb;
+}
+
+.cmn .card {
+    border: none;
+    background-color: #856f4b;
+    color: #fff;
+}
+
+.cmn .card .rate i {
+    font-size: 30px;
+    color: rgb(229, 229, 6);
+}
+
+.cmn .card .user img {
+    width: 30px;
+}
+
+/* CUSTOMER END */
+
+/* FOOTER */
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+/* FOOTER END */
