@@ -7,8 +7,17 @@
     margin: 0px;
     padding: 0px;
 }
-h2{
+
+h2 {
     font-family: 'Cinzel', serif;
+}
+
+P {
+    font-family: 'League Spartan', sans-serif;
+}
+
+h5 {
+    font-family: 'Kalnia', sans-serif;
 }
 
 .navbar-brand {
@@ -30,7 +39,8 @@ nav {
     align-items: center;
     justify-content: space-around;
 }
-#home h1{
+
+#home h1 {
     font-family: 'Cinzel', serif;
 }
 
@@ -127,16 +137,6 @@ nav {
     background-size: cover;
 }
 
-/*
-.ovall2{
-    display: flex;
-    margin-bottom: 400px;
-} */
-
-/* css tempat foto geser */
-/* .carousel{
-    font-family: 'Abril Fatface', serif;
-} */
 
 /* ABOUT */
 #about {
@@ -173,6 +173,150 @@ nav {
     background-size: cover;
 }
 
+/* ABOUT */
+#about {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.row .col .foto {
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 3px solid #856f4b;
+    border-radius: 5%;
+    position: relative;
+    margin: 20px auto;
+}
+
+.row .col .foto::before,
+.row .col .foto::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+    position: absolute;
+}
+
+.row .col .foto::before {
+    top: 15px;
+    left: 15px;
+    background-image: url(image/img1-1.jpeg);
+    background-size: cover;
+}
+
+/* RESPONSIVE ABOUT */
+@media (min-width: 1500px) {
+    .row .col .foto {
+        width: 400px;
+        height: 400px;
+        background: #fff;
+        border: 3px solid #856f4b;
+        border-radius: 5%;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .row .col .foto::before,
+    .row .col .foto::after {
+        content: "";
+        width: 400px;
+        height: 400px;
+        border-radius: 5%;
+        position: absolute;
+    }
+
+    .row .col .foto::before {
+        top: 15px;
+        left: 15px;
+        background-image: url(image/img1-1.jpeg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 750px) {
+    .row .col .foto {
+        width: 300px;
+        height: 300px;
+        background: #fff;
+        border: 3px solid #856f4b;
+        border-radius: 5%;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .row .col .foto::before,
+    .row .col .foto::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+        border-radius: 5%;
+        position: absolute;
+    }
+
+    .row .col .foto::before {
+        top: 15px;
+        left: 15px;
+        background-image: url(image/img1-1.jpeg);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 350px) {
+    .row .col .foto {
+        width: 200px;
+        height: 200px;
+        background: #fff;
+        border: 3px solid #856f4b;
+        border-radius: 5%;
+        position: relative;
+        margin: 20px auto;
+    }
+
+    .row .col .foto::before,
+    .row .col .foto::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        border-radius: 5%;
+        position: absolute;
+    }
+
+    .row .col .foto::before {
+        top: 15px;
+        left: 15px;
+        background-image: url(image/img1-1.jpeg);
+        background-size: cover;
+    }
+}
+
+/* RESPONSIVE ABOUT (END) */
+
+/* NOTES */
+.notes {
+    height: 250px;
+    background-color: #da9d6b;
+    margin-top: 50px;
+}
+
+.notes p {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+}
+
+/* NOTES END */
+
+
+/* BEST SELLER PRODUCT */
+.container .row .col .card {
+    border-color: #8d7055;
+    border-width: 10px;
+}
+
 /* BEST SELLER PRODUCT */
 
 /* CUSTOMER REVIEW */
@@ -198,6 +342,7 @@ nav {
 /* CUSTOMER END */
 
 /* FOOTER */
+
 .footer-distributed {
     background: #666;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -353,8 +498,8 @@ nav {
     color: #ffffff;
     text-align: center;
     line-height: 35px;
-
     margin-right: 3px;
     margin-bottom: 5px;
 }
+
 /* FOOTER END */
